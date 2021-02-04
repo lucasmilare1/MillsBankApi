@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 @Service
 public class ClienteService {
-    @Autowired
+    @Autowired(required = true)
     private ClienteRepository clienteRepository;
 
     public Cliente salvar(Cliente cliente) {
