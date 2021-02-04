@@ -9,14 +9,14 @@ import java.util.List;
 @Service
 public class ClienteService {
     @Autowired
-    private ClienteRepository pessoaRepository;
+    private ClienteRepository clienteRepository;
 
     public Cliente salvar(Cliente cliente) {
-        return pessoaRepository.save(cliente);
+        return clienteRepository.save(cliente);
     }
 
     public List<Cliente> listar() {
-        return pessoaRepository.findAll();
+        return clienteRepository.findAll();
     }
 
 }
